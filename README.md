@@ -1,78 +1,104 @@
-# P | E | M Inc.  Warehouse Management System 
+#  Need to Rehome Your Pet? from more than 17,000 animal shelters & rescues.
 ####
-# About
-PEM, Inc. is a collaborative team of Verizon Apprentices with backgrounds in Web Development, Full Stack, and Cloud Engineering. The Verizon Operations and Logistics Team is looking for a full redesign of their warehouse inventory management system and has tasked PEM, Inc. to present a prototype of a redesigned Warehouse Management System that supports key essential elements while also reaching for stretch goals that are optional in completing the the task of "Building a Better Warehouse Management System".
-
-Our team will demonstrate the skills we have learned thourghout the Verzion Thrive Apprenticeship/ Multiverse Bootcamp which include test-driven, object-oriented programming in JavaScript using a Node.js runtime environment; backend development building a SQLite database with a Sequelize Object Relational Mapper within an Express web framework to handle HTTP requests and responses; front-end development using handlebars and JavaScript DOM manipulation; and finally, development of a completed full-stack application following an Agile development process using Project Management Planning tools to manage and monitor project development using Jira Kanban Board, and Entity Relationship Diagram, and Sequential Relationship Diagram. A well, we used GitHub to support colaborative code development using commands:
-<ul> <li>git add .</li> <li>git commit -m</li><li>git push</li><li>git checkout main</li><li>git pull</li><li>git checkout "branch"</li><li>git rebase main</li> </ul>
+# Why Adopt a Dog or Cat Over Buying?
+Did you know that over 1,000 people per hour run a search right here looking to adopt a pet? Pet adoption is quickly becoming the preferred way to find a new dog, puppy, cat or kitten. Best of all, there are so many benefits when you adopt a dog or adopt a cat over buying. For instance, pet adoption will almost always be more affordable than buying a puppy for sale from a breeder or finding a kitten for sale from a litter.
 
 
 
-https://youtu.be/I-qmb_O0HSk 
+#The Experts & Tools You Need to Find the Perfect Pet.
+Have you addressed what type of pet personality you are looking for? Wait a second, did we just say personality, and not breed? Yes, that is right. Finding the ideal pet for yourself or family should start with an understanding of the ideal pet personality. Consider this, do you need a dog that is low key and good with kids, or are you looking for an energetic pal who is into trail running? Perhaps a cat that will get along well with others is what you need.
 
-Scan QR Code
-
-![QR Code](https://user-images.githubusercontent.com/94469645/147266712-1327f2aa-398e-408e-b72e-578c365ffad8.PNG)
+The dog rescues and cat rescues that post hundreds of local pets near you are experts at matching you with a dog or cat who will love the life you can provide. This is why so many people are realizing focusing on dog adoption and cat adoption from a rescue is the ideal pet search process.
 
 
-# Meet The Team
-#### Preeti Das ![image](https://user-images.githubusercontent.com/94469645/146899632-305a86d2-6180-40c9-b490-e6b782ab8187.png)
+The Experts & Tools You Need to Find the Perfect Pet
+Have you addressed what type of pet personality you are looking for? Wait a second, did we just say personality, and not breed? Yes, that is right. Finding the ideal pet for yourself or family should start with an understanding of the ideal pet personality. Consider this, do you need a dog that is low key and good with kids, or are you looking for an energetic pal who is into trail running? Perhaps a cat that will get along well with others is what you need.
 
-#### Erica Newman ![image](https://user-images.githubusercontent.com/94469645/146899559-32ca3d7f-3669-4e62-a101-5759ab41fa73.png)
+The dog rescues and cat rescues that post hundreds of local pets near you are experts at matching you with a dog or cat who will love the life you can provide. This is why so many people are realizing focusing on dog adoption and cat adoption from a rescue is the ideal pet search process.
 
-#### Martin Renteria ![image](https://user-images.githubusercontent.com/94469645/146899450-010ad8b0-faba-497f-80e2-dc32db43aa7b.png)
+Best of all, our website has a feature called "New Pet Alert." Simply tell us what you are looking for and we will email you when that perfect pet is available! So even if you've made the commitment to adopt a puppy or adopt a kitten, we will email you immediately when we know of a local little furry fellow who is in need of a new home!
+
+
+
+
+
+Available Scripts
+In the project directory, you can run:
+
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
+
+The page will reload when you make changes.
+You may also see any lint errors in the console.
+
+npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
+
+npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+See the section about deployment for more information.
+
+npm run eject
+Note: this is a one-way operation. Once you eject, you can't go back!
+
+If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 
 # Features
 #### Essential User Stories:
 
-- [ ] The application must allow warehouse employee to view the warehouses in the database as a dynamic web page.  Warehouses have a unique name, location, image, and capacity.
-- [ ] The application must allow warehouse employee to add and remove palettes of inventory from a warehouse using a graphical user interface.  Pallets can only be added to warehouses with available capacity.
-- [ ] The application must allow warehouse employee to add and remove boxes of inventory from a palette using a graphical user interface.  Boxes can only be added to palettes with available capacity.
-- [ ] The application must allow warehouse employee to get notified when a pallet is empty and must be removed.
+- [ ] The application must allow pets view the warehouses in the database as a dynamic web page.  Pets have a unique name, location, image,color, race and weight.
+- [ ] The application must allow Users to choose a pet of their choice from any location by using GUI, Pets can be added, updated and there is a like button also.
+- [ ] The application must allow users to get notified upon the arrival of a new pet.
 
 #### Extension User Stories (Optional):
-- [ ] The application can allow warehouse employee to log into a password-secured employee view.  My password will be encrypted before being stored in a user database.
-- [ ] The application allows warehouse manager to log into a password-secured manager view.  My password will be encrypted before being stored in a user database.
-- [ ] The application allows warehouse manager, to add and remove warehouses from the database in a secure manager view.
-- [ ] The application allows warehouse manager, to add and remove warehouse employees from the database in a secure manager view.
-- [ ] The application allows warehouse employee, to be associated with a specific worksite and may only add or remove inventory from that site.
+- [ ] The application can allow users to log into a password-secured employee view.  My password will be encrypted before being stored in a user database..
+- [ ] The application allows admin , to add and remove pets from the database in a secure manager view.
+- [ ] The application allows users, to be associated with a specific location.
 - [ ] The application allows warehouse manager to update the worksite of a given employee.
-- [ ] The application allows warehouse manager, I can view a record of employee activity including timestamps of all items they added or removed from a warehouse.
+- [ ] The application allows location manager, I can view a record of pets activity including timestamps of all pets they added or removed from adoption.
 
 
 # Technologies Used
 <ul>
-      <li>Jest</li>
-      <li>Express</li>
+      <li>React</li>
+      <li>babel/preset-env </li>
       <li>Sequelize</li>
-      <li>SQlite3</li>
-      <li>Postman</li>
-      <li>handlebars</li>
-      <li>Bootstrap</li>
-      <li>express-handlebars</li>
+      <li>babel/preset-react</li>
+        <li>npm</li>
+      <li>npx</li>
       <li>GitHub</li>
-      <li>Jira</li>
+      <li>Jira Kanban</li>
       
   </ul>
   
 # Project Planning
 #### PROTOTYPE
-![Prototype 1](https://user-images.githubusercontent.com/94469645/147245564-30a60db3-0aed-4ed8-b019-884ca8f3342b.PNG) ![Prototype5](https://user-images.githubusercontent.com/94469645/147245767-af65a490-52a4-4fdc-aaa1-e678daefec18.PNG) ![Prototype4](https://user-images.githubusercontent.com/94469645/147245747-1c246d1a-b545-4e17-9469-ae0124d109a3.PNG) 
+![Prototype 1](https://github.com/PuppsAndPaws-Adoption-App/frontend/
 
 PEM Mobile WMS Prototype Document  https://docs.google.com/document/d/10rwLEPSGyQCkPrzKO27EevZ8LxLs1Gk745xsL4LEsqY/edit?usp=sharing
 
 
 #### KANBAN BOARD
-![Kanban Board (2)](https://user-images.githubusercontent.com/94469645/146900168-d76ba27a-4b13-4732-b0e5-ff08a233ff7d.PNG)
-![Kanban Board N (3)](https://user-images.githubusercontent.com/94469645/146900199-d7688384-6e07-40ac-87df-38bff4c963a2.png)
+![https://saeedshahzad.atlassian.net/jira/software/projects/PPDAA/boards/4)
 
 #### ERD- ENTITY RELATIONSHIP DIAGRAM
-![PEM-WMS Entity Relationship drawio (3)](https://user-images.githubusercontent.com/94469645/146901242-f16cef08-4882-41bd-a9f6-f4cf51e25ccb.png)
+![![image](https://user-images.githubusercontent.com/61039707/152599386-57dec078-8cdf-4e5c-8c30-411afbb6e07f.png)
 
-#### SEQUENTIAL RELATIONSHIP DIAGRAM
-![PEM Inventory Management System drawio (1)](https://user-images.githubusercontent.com/94469645/146900938-74816a80-f279-4920-8b3e-95a946a1c1aa.png)
+
+
   
 # Testing
 #### Test Driven Development (TDD ) CRUD Jest Testing
-![CRUD Testing and Report](https://user-images.githubusercontent.com/94469645/147026871-85c40b7e-4b13-4bd0-b751-2f790ca01aa4.PNG)
+![CRUD Testing and Report]
