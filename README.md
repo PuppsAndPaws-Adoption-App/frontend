@@ -58,7 +58,7 @@ You don't have to ever use eject. The curated feature set is suitable for small 
 # Features
 #### Essential User Stories:
 
-- [ ] The application must allow pets view the warehouses in the database as a dynamic web page.  Pets have a unique name, location, image,color, race and weight.
+- [ ] The application must allow pets view the in the database as a dynamic web page.  Pets have a unique name, location, image,color, race and weight.
 - [ ] The application must allow Users to choose a pet of their choice from any location by using GUI, Pets can be added, updated and there is a like button also.
 - [ ] The application must allow users to get notified upon the arrival of a new pet.
 
