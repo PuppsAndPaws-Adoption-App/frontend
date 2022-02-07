@@ -15,7 +15,7 @@ const [dogs, setDogs]=useState([])
 //function to fetch dogs and store in state
 async function fetchDogs(){
   try{
-       const response = await fetch('http://localhost:3000/sauces', {
+       const response = await fetch('http://localhost:3000/dogs', {
          method: 'GET'
        });
        const responseJSON = await response.json()

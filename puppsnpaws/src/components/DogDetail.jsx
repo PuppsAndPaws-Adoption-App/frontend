@@ -16,7 +16,7 @@ function DogDetail() {
             method: 'GET'
             });
             const responseJSON = await response.json()
-            //updates state with sauce list
+            //updates state with dog list
             console.log(responseJSON)
             setDogState(responseJSON.dog)
         } catch(err) {
@@ -35,7 +35,6 @@ function DogDetail() {
         <div className='DogDetail'>
             <h2 id="item-name">{dogState.name}</h2>
             <img className="item-img" src={dogState.image} alt={dogState.name} />
-            {/* <h3>Likes: <span id="like-counter">{dogState.likes}</span></h3> */}
             <Link to="/">Back</Link>
         </div>
         :

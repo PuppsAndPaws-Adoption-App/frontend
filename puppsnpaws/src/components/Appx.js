@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 //import DogList from './DogList'
 //import DogDetail from './DogDetail';
-import Header from './Header'
-import Footer from './Footer'
+
 //import NewDogForm from './NewDogForm';
 import '../App.css';
 import { Route, Routes } from 'react-router-dom';
@@ -57,8 +56,7 @@ useEffect(() => {
   //Each Route has a path (url) and element (componenet to render)
   return (
     <div className="App">
-      <Header dogs={dogs}/>
-
+ 
         <Routes>
           <Route path='/' element={<DogList sauces={dogs}/>}/>
           <Route path='/dogs' element={<DogList dogs={dogs}/>}/>
@@ -68,7 +66,6 @@ useEffect(() => {
 
       <p>Hello World!</p>
 
-        <Footer test={"test"}/>
     </div>
   );
 }

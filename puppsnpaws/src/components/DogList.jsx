@@ -6,7 +6,7 @@ function DogList({dogs}) {
     return (
         <div>
             {dogs.map((dog)=>{
-                return <Dog key={dog.id} sauce={dog}/>
+                return <Dog key={dog.id} dog={dog}/>
             })}
         </div>
     );
