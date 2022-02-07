@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-function NewSauceForm(props) {
+function NewDogForm(props) {
 
     //set an initial state for the form
     const initialState = {name:"", image:""}
 
-    //store the sauce form in state
+    //store the dog form in state
     const [formState, setFormState]= useState(initialState)
 
     //update name state when an input changes
@@ -18,16 +18,16 @@ function NewSauceForm(props) {
         //prevent the page from refreshing on submit
         e.preventDefault()
 
-        //create new sauce in database
-        postSauce()
+        //create new dog in database
+        postDog()
 
         //reset form
         setFormState(initialState)
     }
 
-    //create new sauce in database
-    const postSauce = async () => {
-        await fetch(`http://localhost:3000/new-sauce`, {
+    //create new dog in database
+    const postDog = async () => {
+        await fetch(`http://localhost:3000/new-dog`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,13 +42,13 @@ function NewSauceForm(props) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Hot Sauce Name:</label>
+            <label htmlFor="name">Dog Name:</label>
             <input type="text" id="name" name="name" required onChange={handleChange}/><br/>
             <label htmlFor="image">Image URL:</label>
             <input type="url" id="image" name="image" required onChange={handleChange}/><br/>
-            <button type="submit">Submit a new hot sauce</button>
+            <button type="submit">Submit a new dog</button>
         </form>
     );
 }
 
-export default NewSauceForm;
+export default NewDogForm;

@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import SauceList from './SauceList'
-import SauceDetail from './SauceDetail';
+import DogList from './DogList'
+import DogDetail from './DogDetail';
 import Header from './Header'
 import Footer from './Footer'
-import NewSauceForm from './NewSauceForm';
+import NewDogForm from './NewDogForm';
 import '../App.css';
 import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
 
-const [sauces, setSauces]=useState([])
+const [dogs, setDogs]=useState([])
 
-//function to fetch sauces and store in state
-async function fetchSauces(){
+//function to fetch dogs and store in state
+async function fetchDogs(){
   try{
        const response = await fetch('http://localhost:3000/sauces', {
          method: 'GET'
        });
        const responseJSON = await response.json()
-       //updates state with sauce list
-       setSauces(responseJSON)
+       //updates state with dog list
+       setDogs(responseJSON)
   } catch(err) {
     console.log(err)
   }
 }
 
-//upon initial render, run the fetchSauces() function
+//upon initial render, run the fetchDogs() function
 useEffect(() => {
-  fetchSauces()
+  fetchDogs()
 }, [])
 
 
@@ -36,13 +36,13 @@ useEffect(() => {
   //Each Route has a path (url) and element (componenet to render)
   return (
     <div className="App">
-      <Header sauces={sauces}/>
+      <Header dogs={dogs}/>
 
         <Routes>
-          <Route path='/' element={<SauceList sauces={sauces}/>}/>
-          <Route path='/sauces' element={<SauceList sauces={sauces}/>}/>
-          <Route path='/sauces/:id' element={<SauceDetail/>}/>
-          <Route path='/new' element={<NewSauceForm/>}/>
+          <Route path='/' element={<DogList dogs={dogs}/>}/>
+          <Route path='/dogs' element={<DogList dogs={dogs}/>}/>
+          <Route path='/dogs/:id' element={<DogDetail/>}/>
+          <Route path='/new' element={<NewDogForm/>}/>
         </Routes>
 
       <p>Hello World!</p>
