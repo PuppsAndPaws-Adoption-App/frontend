@@ -1,19 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import SauceList from './SauceList'
-import SauceDetail from './SauceDetail';
-import Header from './Header'
-import Footer from './Footer'
-import NewSauceForm from './NewSauceForm';
+// import SauceList from './SauceList'
+// import SauceDetail from './SauceDetail';
+// import Header from './Header'
+// import Footer from './Footer'
+// import NewSauceForm from './NewSauceForm';
 import '../App.css';
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
+//import { isValidZip, showAlert } from "./validate";
 
 
-function App() {
+const petForm = document.querySelector("#pet-form");
 
-const [sauces, setSauces]=useState([])
+petForm.addEventListener("submit", fetchAnimals);
+
+function Appx() {
+
+  const [animals, setAnimals]=useState([])
+
 
 //function to fetch sauces and store in state
-async function fetchSauces(){
+async function fetchAnimals(e){
+  e.preventDefault();
+
+  // Get User Input
+  const animal = document.querySelector("#animal").value;
+  const zip = document.querySelector("#zip").value;
+
+  // Validate Zip
+  if (!isValidZip(zip)) {
+    showAlert("Please Enter A Valid Zipcode", "danger");
+    return;
+  }
+  
+
+
+
+
   try{
        const response = await fetch('http://localhost:3000/sauces', {
          method: 'GET'
@@ -30,7 +52,6 @@ async function fetchSauces(){
 useEffect(() => {
   fetchSauces()
 }, [])
-
 
 
   //Each Route has a path (url) and element (componenet to render)
@@ -52,4 +73,4 @@ useEffect(() => {
   );
 }
 
-export default App;
+export default Appx;
