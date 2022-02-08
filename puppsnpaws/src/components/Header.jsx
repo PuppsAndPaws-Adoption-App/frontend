@@ -1,15 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {Container, Navbar, Nav} from 'react-bootstrap';
 
 function Header(props) {
     return (
-        <div>
-           <Link className='link' to='/'><h3>View Dogs</h3></Link>
-           <Link className='link'to='/new'><h3>Add New Dog</h3></Link>
-           {props.dogs.map((dog) => {
-               return <Link className='link'key={dog.id} to={`/dogs/${dog.id}`}>{dog.name}</Link>
-           })}
-        </div>
+  <Navbar bg="light">
+  <Container>
+    <Navbar.Brand href="#home">
+      <img
+        src="/logo.PNG"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="React Bootstrap logo"
+      />
+    </Navbar.Brand>
+    <Nav className="me-auto">
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/new">Add New Dog</Nav.Link>
+
+      </Nav>
+
+  </Container>
+  </Navbar>
+ 
     );
 }
 
