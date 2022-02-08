@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import { Link, useParams } from "react-router-dom";
+import {Card,Button} from 'react-bootstrap';
+
 
 function DogDetail() {
     //get the id from the Route parameters
@@ -32,11 +34,24 @@ function DogDetail() {
     return (
         dogState
         ? 
-        <div className='DogDetail'>
-            <h2 id="item-name">{dogState.name}</h2>
-            <img className="item-img" src={dogState.image} alt={dogState.name} />
-            <Link to="/">Back</Link>
-        </div>
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={dogState.image} alt={dogState.name} />
+  <Card.Body>
+    <Card.Title>{dogState.name}</Card.Title>
+    <Card.Text>
+         <ul>
+             <li>{dogState.age}</li>
+             <li>{dogState.gender}</li>
+             <li>{dogState.size}</li>
+             <li>{dogState.zipCode}</li>
+
+         </ul>
+    </Card.Text>
+    <Link to="/">Back</Link>
+  </Card.Body>
+</Card>
+
+ 
         :
         <p>loading..</p>
 
