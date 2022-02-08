@@ -6,6 +6,7 @@ import Footer from './Footer'
 import NewDogForm from './NewDogForm';
 import '../App.css';
 import { Route, Routes } from 'react-router-dom';
+import ZipCode from './ZipCode';
 
 
 function App() {
@@ -36,18 +37,19 @@ useEffect(() => {
   //Each Route has a path (url) and element (componenet to render)
   return (
     <div className="App">
-      <Header dogs={dogs}/>
+      <Header dogs={dogs} />
 
-        <Routes>
-          <Route path='/' element={<DogList dogs={dogs}/>}/>
-          <Route path='/dogs' element={<DogList dogs={dogs}/>}/>
-          <Route path='/dogs/:id' element={<DogDetail/>}/>
-          <Route path='/new' element={<NewDogForm/>}/>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<DogList dogs={dogs} />} />
+        <Route path="/dogs" element={<DogList dogs={dogs} />} />
+        <Route path="/dogs/:id" element={<DogDetail />} />
+        <Route path="/new" element={<NewDogForm />} />
+        <Route path="/zipCode/:zipCode" element={<ZipCode />} />
+      </Routes>
 
       <p>Hello World!</p>
 
-        <Footer test={"test"}/>
+      <Footer test={"test"} />
     </div>
   );
 }
