@@ -2,26 +2,26 @@ import React, {useState, useEffect} from 'react';
 import Dog from './Dog';
 import {useParams } from "react-router-dom";
 
-function zipCode() {
+function ZipCode() {
 
     //get the id from the Route parameters
         let { zipCode } = useParams();
     //maps through list of dogs, creating a component for each
 
     //dogState will store the specific dog we fetch
-    const [dogState, setDogState]=useState({})
+    const [dogState, setDogState] = useState([]);
 
     //function to fetch dogs and store in state
     const fetchzipCode = async () =>{
         try{
-            console.log(id)
+            console.log(zipCode)
             const response = await fetch(`http://localhost:3000/zipCode/${zipCode}`, {
             method: 'GET'
             });
             const responseJSON = await response.json()
             //updates state with dog list
             console.log(responseJSON)
-            setDogState(responseJSON.dog)
+            setDogState(responseJSON)
         } catch(err) {
         console.log(err)
         }
@@ -36,12 +36,18 @@ function zipCode() {
 
 
     return (
-        <div>
+        dogState 
+        ?
+            <div>
+                
             {dogState.map((dog)=>{
                 return <Dog key={dog.zipCode} dog={dog}/>
             })}
-        </div>
+            </div>
+
+            :
+            <div>            </div>
     );
 }
 
-export default zipCode;
+export default ZipCode;
