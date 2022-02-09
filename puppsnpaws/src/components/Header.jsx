@@ -4,7 +4,7 @@ import {Container, Navbar, Nav} from 'react-bootstrap';
 
 function Header(props) {
     return (
-  <Navbar bg="light">
+  <Navbar bg="dark" variant= "dark">
   <Container>
     <Navbar.Brand href="#home">
       <img
@@ -17,9 +17,9 @@ function Header(props) {
     </Navbar.Brand>
     <Nav className="me-auto">
         <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/new">Add New Dog</Nav.Link>
+        <Nav.Link href="/new">Register Pet</Nav.Link>
 
-      </Nav>
+     </Nav>
 
   </Container>
   </Navbar>
