@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import { useParams } from "react-router-dom";
+import DogList from './DogList'
+
 
 function NewDogForm(props) {
 
     //set an initial state for the form
-    const initialState = {name:"", image:""}
+    const initialState = {name:"", image:"", zipcode: ""}
 
     //store the dog form in state
     const [formState, setFormState]= useState(initialState)
+
+     //dogState will store the specific dog we fetch
+    const [dogState, setDogState] = useState([]);
 
     //update name state when an input changes
     const handleChange = (e) => {
@@ -34,7 +40,8 @@ function NewDogForm(props) {
             },
             body: JSON.stringify({
                 name: formState.name,
-                image: formState.image
+                image: formState.image,
+                zipCode: formState.zipcode
             })
         })
     }
@@ -42,12 +49,17 @@ function NewDogForm(props) {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p> List Your Pet For Adoption</p>
             <label htmlFor="name">Dog Name:</label>
             <input type="text" id="name" name="name" required onChange={handleChange}/><br/>
+            <label htmlFor="name">  Zip Code  :</label>
+            <input type="text" zipcode="zipCode" name="zipcode" required onChange={handleChange}/><br/>
             <label htmlFor="image">Image URL:</label>
             <input type="url" id="image" name="image" required onChange={handleChange}/><br/>
-            <button type="submit">Submit a new dog</button>
+            <button type="submit">List A New Pet</button>
+            <DogList dogs={dogState}/>
         </form>
+        
     );
 }
 

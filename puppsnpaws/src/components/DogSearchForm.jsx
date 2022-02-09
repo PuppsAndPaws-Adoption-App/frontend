@@ -55,12 +55,12 @@ function DogSearchForm() {
         <Container>
         <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formGroupDog">
-                <Form.Label>Animal</Form.Label>
+                <Form.Label>Pet Search</Form.Label>
                 <Form.Control type="text" placeholder="Search" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formGroupZipCode">
                 <Form.Label>ZipCode</Form.Label>
-                <Form.Control type="text" placeholder="ZipCode" />
+                <Form.Control type="text" placeholder="Zip Code" />
             </Form.Group>
             <Button type="submit">submit</Button>
         </Form>
