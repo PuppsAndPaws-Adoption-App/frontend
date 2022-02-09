@@ -2,9 +2,14 @@
 
 #  Pupps And Paws Adopt-A-Pet App
 ####
-# About Pupps And Paws
+# About Pupps And Paws 
+A collaborative team of Verizon Apprentices with backgrounds in React Web Development and Full Stack developed an app to help bring the public and the adoption agency together in helping pets find new homes.  The application supports key essential elements like the picture of the pet, age, description, etc in completing the the task of "Building a Better Dog Adoption App"
 
-Pupps And Paws Adopt-A-Pet App is an online, searchable database of animals who need homes. It is also a directory of nearly 11,000 animal shelters and adoption organizations across in Texas. Organizations maintain their own home pages and available-pet databases.
+Our team will demonstrate the skills we have learned using React in the frontend querying the database in the backend. Agile development process using Project Management Planning tools to manage and monitor project development using Jira Kanban Board, and Entity Relationship Diagram, and Sequential Relationship Diagram. A well, we used GitHub to support colaborative code development using commands:
+<ul> <li>git add .</li> <li>git commit -m</li><li>git push</li><li>git checkout main</li><li>git pull</li><li>git checkout "branch"</li><li>git rebase main</li> </ul>
+
+# The Adopt-A-Pet App
+Pupps And Paws Adopt-A-Pet App is an online, searchable database of animals who need homes. It is also a directory of pets from animal shelters and adoption organizations across in Texas. Organizations maintain their own home pages and available-pet databases.
 
 # Our Mission
 To use Internet technology and the resources it can generate to:
@@ -39,12 +44,14 @@ Pupps And Paws Adopt-A-Pet App is made up of animal-care professionals and regul
 # Technologies Used
 <ul>
       <li>React</li>
-      <li>babel/preset-env </li>
+      <li>Jest</li>
+      <li>Express</li>
       <li>Sequelize</li>
-      <li>babel/preset-react</li>
-      <li>npm</li>
-      <li>npx</li>
+      <li>SQlite3</li>
+      <li>babel</li>
+      <li>express-handlebars</li>
       <li>GitHub</li>
+      <li>Jira</li>
       <li>Jira Kanban</li>
       
   </ul>
