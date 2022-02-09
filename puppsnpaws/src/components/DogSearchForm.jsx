@@ -59,10 +59,10 @@ function DogSearchForm() {
                 <Form.Control type="text" placeholder="Search" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formGroupZipCode">
-                <Form.Label>ZipCode</Form.Label>
+                <Form.Label>Zip Code</Form.Label>
                 <Form.Control type="text" placeholder="Zip Code" />
             </Form.Group>
-            <Button type="submit">submit</Button>
+            <Button type="submit">Find</Button>
         </Form>
         <DogList dogs={dogState}/>
         </Container>
