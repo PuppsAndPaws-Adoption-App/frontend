@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import { Link, useParams } from "react-router-dom";
-import {Card,Button} from 'react-bootstrap';
+import {Card,ListGroup,ListGroupItem,Button} from 'react-bootstrap';
 
 
 function DogDetail() {
@@ -34,19 +34,22 @@ function DogDetail() {
     return (
         dogState
         ? 
-<Card style={{ width: '18rem' }}>
+<Card style={{ width: '28rem' }}>
   <Card.Img variant="top" src={dogState.image} alt={dogState.name} />
   <Card.Body>
     <Card.Title>{dogState.name}</Card.Title>
     <Card.Text>
-         <ul>
-             <li>{dogState.age}</li>
-             <li>{dogState.gender}</li>
-             <li>{dogState.size}</li>
-             <li>{dogState.zipCode}</li>
-
-         </ul>
+      {dogState.breed}
     </Card.Text>
+  </Card.Body>
+  <ListGroup className="list-group-flush">
+    <ListGroupItem>{dogState.age}</ListGroupItem>
+    <ListGroupItem>{dogState.gender}</ListGroupItem>
+    <ListGroupItem>{dogState.size}</ListGroupItem>
+    <ListGroupItem>{dogState.description}</ListGroupItem>
+    <ListGroupItem>{dogState.zipCode}</ListGroupItem>
+  </ListGroup>
+  <Card.Body>
     <Link to="/">Back</Link>
   </Card.Body>
 </Card>

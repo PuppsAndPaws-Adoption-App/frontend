@@ -1,4 +1,5 @@
 header {
+  align-items: center;
   text-align: center;
   margin: auto;
  }
@@ -10,7 +11,7 @@ body {
 }
 
 /* set rules for flex container */
-.SauceList {
+.DogList {
   /* allows flexbox*/
   display: flex;
   /* orient flexbox into rows */
@@ -22,7 +23,7 @@ body {
 }
 
 /* set rules for items in flex container */
-.Sauce {
+.Dog {
   /* create space around component */
   margin: 2vw;
   /* creates space within component, but around its contents */

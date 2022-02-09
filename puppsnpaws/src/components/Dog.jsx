@@ -5,7 +5,7 @@ function Dog(props) {
   
 
 
-    //render the sauce details
+    //render the dog details
     return (
         <div className='Dog'>
         <h2 id="item-name">{props.dog.name}</h2>
