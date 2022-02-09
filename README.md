@@ -1,4 +1,4 @@
-#  Pupps And Paws Adopt-A-Pet
+#  Pupps And Paws Adopt-A-Pet App
 ####
 # Why Adopt a Dog or Cat Over Buying?
 Did you know that over 1,000 people per hour run a search right here looking to adopt a pet? Pet adoption is quickly becoming the preferred way to find a new dog, puppy, cat or kitten. Best of all, there are so many benefits when you adopt a dog or adopt a cat over buying. For instance, pet adoption will almost always be more affordable than buying a puppy for sale from a breeder or finding a kitten for sale from a litter.
