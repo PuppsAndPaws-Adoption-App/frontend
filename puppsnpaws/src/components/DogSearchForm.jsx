@@ -1,7 +1,8 @@
-import {Button, Container, Form} from 'react-bootstrap';
+import {Button, Container, Form, Image} from 'react-bootstrap';
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DogList from './DogList'
+
 
 function DogSearchForm() {
   
@@ -50,9 +51,11 @@ function DogSearchForm() {
 //  }, [zipCode]);
 
 
-    //render the sauce details
+    //render the dog details
     return (
+
         <Container>
+          <div><Image src="img/BannerImage.JPG"/> </div>
         <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formGroupDog">
                 <Form.Label>Pet Search</Form.Label>
@@ -65,6 +68,7 @@ function DogSearchForm() {
             <Button type="submit">Find</Button>
         </Form>
         <DogList dogs={dogState}/>
+
         </Container>
 
     );
