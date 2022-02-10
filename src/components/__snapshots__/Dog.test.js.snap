@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dog and component renders Dog component as expected 1`] = `
+<div
+  className="Dog"
+>
+  <h2
+    id="item-name"
+  >
+    Cody
+  </h2>
+  <img
+    alt="Cody"
+    className="item-img"
+    src="/img/Cody.jpg"
+  />
+  <button
+    id="delete-btn"
+    onClick={[Function]}
+  >
+    Delete
+  </button>
+  <a
+    className="edit-dog-btn"
+    href="/edit-dog/undefined"
+  >
+    Edit this dog
+  </a>
+</div>
+`;
