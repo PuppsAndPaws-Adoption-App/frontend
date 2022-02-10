@@ -39,15 +39,15 @@ function DogDetail() {
   <Card.Body>
     <Card.Title>{dogState.name}</Card.Title>
     <Card.Text>
-      {dogState.breed}
+      Breed: {dogState.breed}
     </Card.Text>
   </Card.Body>
   <ListGroup className="list-group-flush">
-    <ListGroupItem>{dogState.age}</ListGroupItem>
-    <ListGroupItem>{dogState.gender}</ListGroupItem>
-    <ListGroupItem>{dogState.size}</ListGroupItem>
+    <ListGroupItem>Age:{dogState.age}</ListGroupItem>
+    <ListGroupItem>Sex: {dogState.gender}</ListGroupItem>
+    <ListGroupItem>Weight: {dogState.size}</ListGroupItem>
     <ListGroupItem>{dogState.description}</ListGroupItem>
-    <ListGroupItem>{dogState.zipCode}</ListGroupItem>
+    <ListGroupItem> {dogState.zipCode}</ListGroupItem>
   </ListGroup>
   <Card.Body>
     <Link to="/">Back</Link>
