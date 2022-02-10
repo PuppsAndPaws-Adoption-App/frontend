@@ -19,7 +19,7 @@ function Dog(props) {
         <img className="item-img" src={props.dog.image} alt={props.dog.name} />
         <Link to={`/dogs/${props.dog.id}`}>View</Link>
         <button id="delete-btn" onClick={clickDelete}>Delete</button>
-        <a href={'/edit-dog/'+props.dog.id} className="edit-dog-btn">Edit this dog</a>
+
         </div>
     );
 }

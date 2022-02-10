@@ -46,7 +46,7 @@ useEffect(() => {
         <Route path="/dogs" element={<DogList dogs={dogs} />} />
         <Route path="/dogs/:id" element={<DogDetail />} />
         <Route path="/new" element={<NewDogForm />} />
-        {/* <Route path="/zipCode/:zipCode" element={<ZipCode />} /> */}
+        <Route path="/zipCode/:zipCode" element={<ZipCode />} />
       </Routes>
 
       <p>Hello World!</p>
