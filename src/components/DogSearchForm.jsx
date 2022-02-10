@@ -1,11 +1,14 @@
-import {Button, Container, Form, Image} from 'react-bootstrap';
+import {Button, Container, Form, Image, Carousel} from 'react-bootstrap';
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import DogList from './DogList'
+import DogList from './DogList';
+import ZipCode from './ZipCode';
+
 
 
 function DogSearchForm() {
-  
+ 
+
  //get the id from the Route parameters
  let { zipCode } = useParams();
  //maps through list of dogs, creating a component for each
@@ -26,6 +29,7 @@ function DogSearchForm() {
      setDogState(responseJSON);
    } catch (err) {
      console.log(err);
+     
    }
  };
    //handle form submission
@@ -35,7 +39,7 @@ function DogSearchForm() {
     const zipcodeInput=document.getElementById("formGroupZipCode")
     const zipCode=zipcodeInput.value
     fetchzipCode(zipCode)
-    
+    window.location.assign(`/zipCode/${zipCode}`)
     //create new dog in database
     //postDog()
 
@@ -45,10 +49,10 @@ function DogSearchForm() {
 
 
 
- //useEffect will call the fetchDogDetail when this component mounts
-//  useEffect(() => {
-//    fetchzipCode();
-//  }, [zipCode]);
+//  useEffect will call the fetchDogDetail when this component mounts
+ useEffect(() => {
+   fetchzipCode();
+ }, []);
 
 
     //render the dog details
@@ -66,9 +70,54 @@ function DogSearchForm() {
                 <Form.Control type="text" placeholder="Zip Code" />
             </Form.Group>
             <Button type="submit">Find</Button>
+
         </Form>
-        <div><p> BEST MATCH </p></div>
-        <DogList dogs={dogState}/>
+        <Carousel>
+  <Carousel.Item interval={1000}>
+    <img
+      className="d-block w-100"
+      src="img/BannerImage1.JPG"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>Pupps And Paws</h3>
+      <p>Let Us Help you -- Bring Home Your Furever Friend!</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100"
+      src="img/BannerImage2.JPG"
+      alt="Second Slide"
+    />
+    <Carousel.Caption>
+      <h3></h3>
+      <p></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="img/BannerImage3.JPG"
+      alt="Third slide"
+    />
+    <Carousel.Caption>
+      <h3></h3>
+      <p></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="img/BannerImage1.JPG"
+      alt="Fourth slide"
+    />
+    <Carousel.Caption>
+      <h3></h3>
+      <p></p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
 
         </Container>
 

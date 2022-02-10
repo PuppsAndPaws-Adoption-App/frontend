@@ -34,7 +34,7 @@ function ZipCode() {
   return dogState ? (
     <div>
       {dogState.map((dog) => {
-        return <Dog key={dog.zipCode} dog={dog} />;
+        return <Dog key={dog.id} dog={dog} />;
       })}
     </div>
   ) : (

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 header {
   align-items: center;
   text-align: center;
@@ -42,4 +44,10 @@ img {
 .form-container{
   text-align: left;
   width: 360px;
+}
+
+.Footer{
+  font-family: 'Roboto', sans-serif;
+  color:red;
+
 }
