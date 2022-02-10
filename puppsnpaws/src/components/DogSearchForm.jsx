@@ -67,6 +67,7 @@ function DogSearchForm() {
             </Form.Group>
             <Button type="submit">Find</Button>
         </Form>
+        <div><p> BEST MATCH </p></div>
         <DogList dogs={dogState}/>
 
         </Container>
