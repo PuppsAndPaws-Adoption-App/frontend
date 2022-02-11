@@ -65,7 +65,10 @@ Pupps And Paws Adopt-A-Pet App is made up of animal-care professionals and regul
 
 
 #### KANBAN BOARD
-![https://saeedshahzad.atlassian.net/jira/software/projects/PPDAA/boards/4)
+
+![image](https://user-images.githubusercontent.com/94469645/153622451-6b7f1c0d-abeb-491f-8969-35917935061a.png)
+
+
 
 
 #### ERD- ENTITY RELATIONSHIP DIAGRAM
