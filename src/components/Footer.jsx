@@ -1,13 +1,13 @@
 import React from 'react';
-import {Card,Button, Container} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 
 
 function Footer(props) {
 
     return (
 
-
-        <Card className="Footer" bg="dark" variant= "dark" text="light" >
+<Card className="Footer" bg="dark" variant= "dark" text="light" >
+        
 
             <Card.Header>Find Your Furever Pet</Card.Header>
             <Card.Body>
