@@ -35,12 +35,13 @@ Pupps And Paws Adopt-A-Pet App is made up of animal-care professionals and regul
 # Features
 #### Essential User Stories:
 
-- [ ] The application must allow pets view the in the database as a dynamic web page.  Pets have a unique name, location, image, breed, size, age and weight.
+- [ ] The application must allow the search and view of pets in the database as a dynamic web page.  Pets have a unique name, location, image, breed, size, age and weight.
 - [ ] The application must allow Users to choose a pet of their choice from any location by using GUI, Pets can be added, updated and there is a like button also.
-- [ ] The application must allow users to get notified upon the arrival of a new pet.
+
 
 #### Extension User Stories (Optional):
-- [ ] The application allow Pets to be added, and updated, in addtion to a like button.
+- [ ] The application must allow users to get notified upon the arrival of a new pet.
+- [ ] The application allow Pets to be added, and updated, in addition to a like button.
 - [ ] The application allow users to get notified upon the arrival of a new pet.
 - [ ] The application can allow users to log into a password-secured user view.  My password will be encrypted before being stored in a user database..
 - [ ] The application allows admin , to add and remove pets from the database .
