@@ -11,6 +11,12 @@ Our team will demonstrate the skills we have learned using React in the frontend
 # The Adopt-A-Pet App
 Pupps And Paws Adopt-A-Pet App is an online, searchable database of animals who need homes. It is also a directory of pets from animal shelters and adoption organizations across in Texas. Organizations maintain their own home pages and available-pet databases.
 
+# Heroku PaaS: 
+
+https://puppsandpaws-frontend.herokuapp.com/
+
+
+
 # Our Mission
 To use Internet technology and the resources it can generate to:
 
@@ -60,7 +66,6 @@ Pupps And Paws Adopt-A-Pet App is made up of animal-care professionals and regul
 #### PROTOTYPE
 ![image](https://user-images.githubusercontent.com/94469645/153129139-4fe60623-fd3a-4612-9b8a-dc9ef584ba6e.png)
 ![image](https://user-images.githubusercontent.com/94469645/153130534-c695aa19-e54b-48a8-821f-71f6972c6297.png)
-
 
 
 
