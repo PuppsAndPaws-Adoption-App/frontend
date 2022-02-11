@@ -60,6 +60,7 @@ function NewDogForm(props) {
 
 
     return (
+        <Container>
         <Card style={{ width: '30rem' }}>
         <Card.Body>
         <Form onSubmit={handleSubmit}>
@@ -106,7 +107,7 @@ function NewDogForm(props) {
         </Form>
         </Card.Body>
         </Card>
-
+        </Container>
         
     );
 }

@@ -8,6 +8,7 @@ import NewDogForm from './NewDogForm';
 import '../App.css';
 import { Route, Routes } from 'react-router-dom';
 import ZipCode from './ZipCode';
+import {Link} from 'react-router-dom';
 
 
 function App() {
@@ -49,6 +50,7 @@ useEffect(() => {
         <Route path="/zipCode/:zipCode" element={<ZipCode />} />
       </Routes>
 
+      <p> <Link to="/">Back</Link></p>
       <p>Hello World!</p>
 
       <Footer test={"test"} />

@@ -1,4 +1,4 @@
-import {Button, Container, Form, Image, Carousel} from 'react-bootstrap';
+import {Button, Container, Form, Image, Carousel, Card,CardGroup} from 'react-bootstrap';
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DogList from './DogList';
@@ -59,7 +59,7 @@ function DogSearchForm() {
     return (
 
         <Container>
-          <div><Image src="img/BannerImage.JPG"/> </div>
+          <div><Image className="d-block w-100" src="img/BannerImage.JPG"/> </div>
         <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formGroupDog">
                 <Form.Label>Pet Search</Form.Label>
@@ -69,9 +69,11 @@ function DogSearchForm() {
                 <Form.Label>Zip Code</Form.Label>
                 <Form.Control type="text" placeholder="Zip Code" />
             </Form.Group>
-            <Button type="submit">Find</Button>
-
+            <Button type="submit" variant="primary" size="lg" >Find</Button>           
         </Form>
+        <div className="d-grid gap-2">
+            <Button type="submit" variant="primary" size="lg" > Pets Available for Adoption Nearby </Button>
+         </div>
         <Carousel>
   <Carousel.Item interval={1000}>
     <img
@@ -81,7 +83,7 @@ function DogSearchForm() {
     />
     <Carousel.Caption>
       <h3>Pupps And Paws</h3>
-      <p>Let Us Help you -- Bring Home Your Furever Friend!</p>
+      <p>Let Us Help You -- Bring Home Your Furever Friend!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={500}>
@@ -91,8 +93,8 @@ function DogSearchForm() {
       alt="Second Slide"
     />
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+    <h3>Pupps And Paws</h3>
+    <p>Let Us Help You -- Bring Home Your Furever Friend!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -102,8 +104,8 @@ function DogSearchForm() {
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+    <h3>Pupps And Paws</h3>
+    <p>Let Us Help You -- Bring Home Your Furever Friend!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -113,13 +115,45 @@ function DogSearchForm() {
       alt="Fourth slide"
     />
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+    <h3>Pupps And Paws</h3>
+    <p>Let Us Help You -- Bring Home Your Furever Friend!</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+<CardGroup>
+  <Card>
+    <Card.Body>
+      <Card.Title>Checklist for New Adopters</Card.Title>
+      <Card.Text>
+		Help make the transition, as smooth as possible.
+      </Card.Text>
+       <Button variant="primary">LEARN MORE</Button>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Body>
+      <Card.Title>COVID-19 Resources</Card.Title>
+      <Card.Text>
+        Get the latest on adoption processes, learn how
+	local shelters and rescue groups are adapting
+	and find out what you can do to help dogs and
+	cats in need right now.
+      </Card.Text>
+       <Button variant="primary">LEARN MORE</Button>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Body>
+      <Card.Title>Pet Adoption FAQs</Card.Title>
+      <Card.Text>
+        Get answers to questions you haven't thought of.
+      </Card.Text>
+       <Button variant="primary">LEARN MORE</Button>
+    </Card.Body>
+  </Card>
+</CardGroup>
 
-        </Container>
+</Container>
 
     );
 }
