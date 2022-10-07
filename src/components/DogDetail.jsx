@@ -34,7 +34,7 @@ function DogDetail() {
     return (
         dogState
         ? 
-<Card style={{ width: '28rem' }}>
+<Card style={{ width: '38rem' }}>
   <Card.Img variant="top" src={dogState.image} alt={dogState.name} />
   <Card.Body>
     <Card.Title><h1>{dogState.name}</h1></Card.Title>

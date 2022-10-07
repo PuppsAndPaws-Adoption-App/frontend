@@ -12,8 +12,8 @@ function DogList({dogs}) {
     <Container>
         <Row className="dog-grid">
             {dogs.map((dog)=>{
-                return (<Col xs={12} sm={6} lg={4}><Dog key={dog.id} dog={dog}/>
-                    </Col>)
+                return (<Dog key={dog.id} dog={dog}/> 
+                    )
             })}
             </Row>
     </Container>

@@ -24,6 +24,7 @@ function Dog(props) {
    
                 <Card.Body>
                 <Link to={`/dogs/${props.dog.id}`}>View</Link>   
+                
                  
                 </Card.Body>
                      <button id="delete-btn" onClick={clickDelete}>Delete</button>  

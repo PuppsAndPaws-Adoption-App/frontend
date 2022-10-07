@@ -5,12 +5,12 @@ import {Container, Navbar, Nav,Card} from 'react-bootstrap';
 function Header(props) {
     return (
   <Container>
-     <Navbar bg="dark" variant= "dark">
+     <Navbar bg="dark" variant= "dark" >
        <Container>
            <Navbar.Brand href="#home">
              <img
               src="/logo.PNG"
-              width="30"
+              width="50"
               height="30"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
